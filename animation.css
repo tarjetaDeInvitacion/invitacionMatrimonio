@@ -1,0 +1,91 @@
+:root{
+    /*colores web*/
+    --verde: #639338;
+    --verdeOscuro: #213b0a;
+
+    /*Fuente web*/
+    --titulosOne: "Dancing Script", sans-serif;
+    --titulosTwo: "Pinyon Script", sans-serif;
+    --textosOne: "Playfair Display", sans-serif;
+    --textosTwo: "divGen", sans-serif;
+
+    --altura: 95vh;
+    --ancho: 53.5vh;
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateY(-5px);
+    }
+    50% {
+    transform: translateY(5px); /* Ajusta la distancia del movimiento hacia arriba */
+    }
+    100% {
+    transform: translateY(-5px);
+    }
+}
+
+.arrow{
+    animation: bounce 1s infinite;
+}
+
+@keyframes fadeInScaleUp{
+    0%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.sectionOne{
+    animation: fadeInScaleUp 1s ease-out;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.divGen{
+    view-timeline-name: --reveal;
+    
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+@keyframes shake {
+    0%, 10%, 20%, 30%, 40%, 100% { transform: rotate(0deg); }
+    5%, 25% { transform: rotate(-15deg); }
+    15%, 35% { transform: rotate(15deg); }
+}
+
+.divImg{
+    animation: shake 1.5s infinite;
+}
+
+@keyframes parpadeo {
+    0%, 8%, 16%, 24%, 32%, 100% {
+        background-color: var(--verdeOscuro);
+    }
+
+    4%, 12%, 20%, 28% {
+      background-color: var(--verde);
+    }
+}
+
+.divOne_button{
+    animation: parpadeo 8s infinite;
+}

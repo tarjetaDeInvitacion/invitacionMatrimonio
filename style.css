@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    /*colores web*/
+    --verde: #436227;
+    --verdeOscuro: #213b0a;
+    --verdeMedio: #26450c;
+
+    /*Fuente web*/
+    --titulosOne: "Dancing Script", sans-serif;
+    --titulosTwo: "Pinyon Script", sans-serif;
+    --textosOne: "Playfair Display", sans-serif;
+    --textosTwo: "divGen", sans-serif;
+
+    --altura: 95vh;
+    --ancho: 53.5vh;
+}
+
+/* Asegúrate de que el contenedor permite el scroll-snap */
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* Cada sección debe ajustarse al inicio cuando el scroll llegue a ellas */
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.sectionOne{
+    background-color: #fff6e6;
+    position: relative;
+}
+
+.divOne{
+    position: absolute;
+    background-image: url('img/backgraundOne.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 95vh;
+    width: var(--ancho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.divOne_borde{
+    height: 85vh;
+    width: 80%;
+    border: 1.5px solid var(--verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--textosOne);
+}
+
+.divOne_borde h1{
+    font-family: var(--titulosTwo);
+    font-size: 10vh;
+    text-align: center;
+    color: var(--verde);
+}
+
+.divOne_divBorder{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--verdeMedio);
+}
+
+.arrow{
+    height: 5vh;
+}
+
+.imgDivOne{
+    position: absolute;
+    z-index: 2;
+    height: 95vh;
+    width: var(--ancho);
+    border-radius: 10px;
+}
+
+.imgDivTwo{
+    position: absolute;
+    z-index: 2;
+    height: 95vh;
+    width: var(--ancho);
+    border-radius: 10px;
+}
+
+.divTwo{
+    position: absolute;
+    background-image: url('img/backgroundTwo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 95vh;
+    width: var(--ancho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.divTwo_border{
+    height: 85vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--verde);
+}
+
+.divTwo_parrafo{
+    font-family: var(--titulosOne);
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+.divTwo_titulo{
+    font-family: var(--titulosTwo);
+    font-size: 11vh;
+    line-height: 0.60;
+    text-align: center;
+}
+
+.divTwo_tituloY{
+    font-size: 8vh;
+    text-align: left;
+}
+
+.divTwo_divBorder{
+    font-family: var(--textosOne);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--verdeMedio);
+}
+
+.divTwo_divBorder p{
+    font-size: 5vh;
+}
+
+.divTwo_tituloTwo{
+    font-family: var(--titulosTwo);
+    font-size: 4vh;
+}
+
+.divOne_button{
+    background-color: var(--verdeOscuro);
+}
+
+.divOne_button:hover{
+    background-color: var(--verde);
+    transition: 300ms;
+}
+
+.divOneChange{
+    background-image: url('img/fondoFlorez.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divOne_info{
+    font-family: var(--textosOne);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    gap: 2vh;
+}
+
+.divOne_titulo_info{
+    font-size: 3vh;
+    color: var(--verdeMedio);
+}
+
+.parrafo2{
+    font-size: 3vh;
+}
+
+.divTwoDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: var(--ancho);
+}
+
+.divTwo_borderDos{
+    width: 80%;
+    color: var(--verde);
+}
+
+.divOne_infoDos{
+    width: 80%;
+    text-align: center;
+    font-family: var(--textosOne);
+}
+
+.divImg{
+    height: 10vh;
+}
+
+.divOneEnd{
+    font-family: var(--textosOne);
+    color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.divOne_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.divOne_button:hover{
+    cursor: pointer;
+}
+
+.divOne_button img{
+    height: 2vh;
+}
+
+.hastap{
+    border-top: 1px solid var(--verdeOscuro);
+    border-bottom: 1px solid var(--verdeOscuro);
+    width: 100%;
+    font-size: 6vh;
+}
+
+.divOneChan{
+    background-image: url(img/fondofloresja.png);
+}
+
+.terminemos{
+    width: 80%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 60vh){
+    .divOne{
+        width: 90vw;
+    }
+
+    .divTwo{
+        width: 90vw;
+    }
+
+    .hastap{
+        font-size: 4vh;
+    }
+
+    .imgDivOne{
+        height: 100vh;
+    }
+
+    .divOne_button{
+        font-size: 2vh;
+    }
+
+    .divTwo_tituloTwo{
+        text-align: center;
+    }
+}
