@@ -135,7 +135,8 @@ section {
 
 .divTwo_tituloY{
     font-size: 8vh;
-    text-align: left;
+    text-align: center;
+    margin-left: 50px;
 }
 
 .divTwo_divBorder{
@@ -189,7 +190,7 @@ section {
 }
 
 .parrafo2{
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .divTwoDos{
@@ -257,6 +258,36 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.dibujo{
+    display: flex;
+    align-items: center;
+}
+
+.dibujo img{
+    height: 20vh;
+}
+
+.infoDibujo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    font-size: 2vh;
+}
+
+.pColores{
+    font-size: 1.5vh;
+}
+
+.infoDibujo img{
+    height: 4vh;
+}
+
+.pTitulo{
+    color: var(--verdeOscuro);
 }
 
 @media(max-width: 60vh){
