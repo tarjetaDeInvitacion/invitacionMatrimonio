@@ -274,7 +274,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: center;
     font-size: 2vh;
 }
 
@@ -288,6 +288,11 @@ section {
 
 .pTitulo{
     color: var(--verdeOscuro);
+}
+
+.divPColores{
+    display: flex;
+    gap: 10px;
 }
 
 @media(max-width: 60vh){
@@ -314,4 +319,10 @@ section {
     .divTwo_tituloTwo{
         text-align: center;
     }
+
+    .infoDibujo{
+        font-size: 1.5vh;
+    }
+
+
 }
